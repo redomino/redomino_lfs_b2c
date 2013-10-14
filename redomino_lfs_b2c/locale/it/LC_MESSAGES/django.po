@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-10 16:13+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Fabrizio Reale <fabrizio.reale@redomino.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: templates/lfs/local_translations.html:2
+msgid "Invoice Phone"
+msgstr "Contatto telefonico"
+
+#: templates/lfs/local_translations.html:5
+msgid "Invoice E-mail"
+msgstr "E-mail"
+
+#: templates/lfs/checkout/one_page_checkout.html:5
+#: templates/lfs/checkout/one_page_checkout.html:11
+msgid "Checkout"
+msgstr ""
+
+#: templates/lfs/checkout/one_page_checkout.html:17
+#: templates/lfs/customer/addresses.html:20
+msgid ""
+"The operation could not be performed because one or more errors occurred. "
+"Please see below."
+msgstr ""
+
+#: templates/lfs/checkout/one_page_checkout.html:27
+#: templates/lfs/customer/addresses.html:16
+msgid "Shipping address"
+msgstr ""
+
+#: templates/lfs/checkout/one_page_checkout.html:39
+msgid "Shipping"
+msgstr ""
+
+#: templates/lfs/checkout/one_page_checkout.html:51
+msgid "Please enter your credit card information"
+msgstr ""
+
+#: templates/lfs/checkout/one_page_checkout.html:61
+#: templates/lfs/checkout/one_page_checkout.html:143
+msgid "Only necessary when the payment method is direct debit"
+msgstr ""
+
+#: templates/lfs/checkout/one_page_checkout.html:112
+msgid "Expiration date"
+msgstr ""
+
+#: templates/lfs/checkout/one_page_checkout.html:140
+msgid "Please enter your bank information"
+msgstr ""
+
+#: templates/lfs/checkout/one_page_checkout.html:234
+msgid "Accept terms and conditions"
+msgstr ""
+
+#: templates/lfs/checkout/one_page_checkout.html:243
+msgid "Go to cart"
+msgstr ""
+
+#: templates/lfs/checkout/one_page_checkout.html:246
+msgid "Submit order"
+msgstr ""
+
+#: templates/lfs/customer/addresses.html:6
+msgid "My Addresses"
+msgstr ""
+
+#: templates/lfs/customer/addresses.html:12
+msgid "Change your addresses"
+msgstr ""
+
+#: templates/lfs/customer/addresses.html:35
+msgid "Save address"
+msgstr ""
