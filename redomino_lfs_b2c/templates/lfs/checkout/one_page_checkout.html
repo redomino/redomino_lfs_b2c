@@ -12,12 +12,15 @@
 {% endblock %}
 
 {% block wrapper %}
+
+    <div class="col-md-12">
+
     {% if form.errors %}
-        <div class="form-errors alert alert-error">
-            {% trans "The operation could not be performed because one or more errors occurred. Please see below." %}
+        <div class="form-errors alert alert-danger">
+            <strong>{% trans "The operation could not be performed because one or more errors occurred. Please see below." %}</strong>
         </div>
     {% endif %}
-    <div class="col-md-12">
+
         <form class="checkout-form postal-address"
               method="post"
               data="{% url lfs_changed_checkout %}"
@@ -207,26 +210,27 @@
             <div class="clearfix"></div>
 
             {# Cart #}
-            <div id="cart-inline clearfix">
+            <div id="cart-inline" class="clearfix">
                 {{ cart_inline }}
             </div>
 
             {# Message #}
-            <div class="control-group">
-                <div class="control-label">
-                {{form.message.label_tag}}
-                </div>
-                <div class="controls">
-                {{ form.message }}
+            <div class="row">
+                <div class="control-group col-md-6">
+                    <div class="control-label">
+                        {{form.message.label_tag}}
+                    </div>
+                    <div class="controls">
+                        {{ form.message }}
+                    </div>
                 </div>
             </div>
-
 
             {% if SHOP.confirm_toc %}
             <div class="row">
                 <div class="col-md-6">
                 {% if form.errors.confirm_toc %}
-                <div class="alert alert-error">{{ form.errors.confirm_toc }}</div>
+                <div class="alert alert-danger">{{ form.errors.confirm_toc }}</div>
                 {% endif %}
 
                 <label class="checkbox-inline" for="confirm_toc">

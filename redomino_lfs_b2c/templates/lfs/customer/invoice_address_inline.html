@@ -28,7 +28,7 @@
             </div>
         </div>
         {% for field in address_form %}
-            <div class="form-group col-md-6">
+            <div class="form-group col-md-6 {{ field.name }}">
                 <div class="control-label">
                     {{ field.label_tag }}{% if field.field.required %}*{% endif %}:
                 </div>
@@ -60,6 +60,8 @@
 		        </div>
 		    </div>
 	    {% endif %}
+        {#: questo campo permette di utilizzare solo i campi per la fatturazione #}
+        <input type="hidden" name="no_shipping" value="True" />
 	</div>
 </div>
 

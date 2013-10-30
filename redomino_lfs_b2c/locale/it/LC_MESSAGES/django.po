@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-21 12:03+0200\n"
+"POT-Creation-Date: 2013-10-23 10:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Fabrizio Reale <fabrizio.reale@redomino.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,53 +26,137 @@ msgstr "Contatto telefonico"
 msgid "Invoice E-mail"
 msgstr "E-mail"
 
+#: templates/lfs/cart/added_to_cart_items.html:7
+#: templates/lfs/cart/cart_inline.html:18
+#: templates/lfs/checkout/checkout_cart_inline.html:30
+msgid "Product"
+msgstr ""
+
+#: templates/lfs/cart/added_to_cart_items.html:11
+#: templates/lfs/cart/cart_inline.html:22
+#: templates/lfs/checkout/checkout_cart_inline.html:34
+msgid "Quantity"
+msgstr ""
+
+#: templates/lfs/cart/added_to_cart_items.html:14
+#: templates/lfs/cart/cart_inline.html:25
+#: templates/lfs/checkout/checkout_cart_inline.html:37
+#: templates/lfs/mail/order_details.html:152
+msgid "Price"
+msgstr ""
+
+#: templates/lfs/cart/added_to_cart_items.html:17
+#: templates/lfs/cart/added_to_cart_items.html:83
+#: templates/lfs/cart/cart_inline.html:28
+#: templates/lfs/cart/cart_inline.html:233
+#: templates/lfs/checkout/checkout_cart_inline.html:40
+#: templates/lfs/checkout/checkout_cart_inline.html:179
+#: templates/lfs/mail/order_details.html:55
+#: templates/lfs/mail/order_details.html:155
+msgid "Total"
+msgstr ""
+
+#: templates/lfs/cart/cart_inline.html:8
+msgid "Your Cart"
+msgstr ""
+
+#: templates/lfs/cart/cart_inline.html:107
+msgid "Delete item"
+msgstr ""
+
+#: templates/lfs/cart/cart_inline.html:138
+#: templates/lfs/cart/cart_inline.html:255
+#: templates/lfs/checkout/checkout_cart_inline.html:126
+#: templates/lfs/mail/order_details.html:207
+msgid "Voucher"
+msgstr ""
+
+#: templates/lfs/cart/cart_inline.html:159
+msgid "Country"
+msgstr ""
+
+#: templates/lfs/cart/cart_inline.html:180
+#: templates/lfs/checkout/checkout_cart_inline.html:144
+#: templates/lfs/checkout/one_page_checkout.html:42
+#: templates/lfs/mail/order_details.html:224
+msgid "Shipping"
+msgstr ""
+
+#: templates/lfs/cart/cart_inline.html:206
+#: templates/lfs/checkout/checkout_cart_inline.html:161
+#: templates/lfs/mail/order_details.html:239
+msgid "Payment"
+msgstr ""
+
+#: templates/lfs/cart/cart_inline.html:247
+msgid "Total delivery time"
+msgstr ""
+
+#: templates/lfs/cart/cart_inline.html:281
 #: templates/lfs/checkout/one_page_checkout.html:5
 #: templates/lfs/checkout/one_page_checkout.html:11
 msgid "Checkout"
 msgstr ""
 
-#: templates/lfs/checkout/one_page_checkout.html:17
+#: templates/lfs/cart/cart_inline.html:285
+#: templates/lfs/cart/cart_inline.html:295
+msgid "Go on shopping"
+msgstr ""
+
+#: templates/lfs/cart/cart_inline.html:291
+msgid "Your Cart is empty"
+msgstr ""
+
+#: templates/lfs/checkout/checkout_cart_inline.html:7
+msgid "Voucher code"
+msgstr ""
+
+#: templates/lfs/checkout/checkout_cart_inline.html:25
+msgid "Your cart"
+msgstr ""
+
+#: templates/lfs/checkout/checkout_cart_inline.html:186
+msgid "Inclusive VAT"
+msgstr ""
+
+#: templates/lfs/checkout/one_page_checkout.html:20
 #: templates/lfs/customer/addresses.html:20
 msgid ""
 "The operation could not be performed because one or more errors occurred. "
 "Please see below."
 msgstr ""
 
-#: templates/lfs/checkout/one_page_checkout.html:27
+#: templates/lfs/checkout/one_page_checkout.html:30
 #: templates/lfs/customer/addresses.html:16
 msgid "Shipping address"
 msgstr ""
 
-#: templates/lfs/checkout/one_page_checkout.html:39
-msgid "Shipping"
-msgstr ""
-
-#: templates/lfs/checkout/one_page_checkout.html:51
+#: templates/lfs/checkout/one_page_checkout.html:54
 msgid "Please enter your credit card information"
 msgstr ""
 
-#: templates/lfs/checkout/one_page_checkout.html:61
-#: templates/lfs/checkout/one_page_checkout.html:143
+#: templates/lfs/checkout/one_page_checkout.html:64
+#: templates/lfs/checkout/one_page_checkout.html:146
 msgid "Only necessary when the payment method is direct debit"
 msgstr ""
 
-#: templates/lfs/checkout/one_page_checkout.html:112
+#: templates/lfs/checkout/one_page_checkout.html:115
 msgid "Expiration date"
 msgstr ""
 
-#: templates/lfs/checkout/one_page_checkout.html:140
+#: templates/lfs/checkout/one_page_checkout.html:143
 msgid "Please enter your bank information"
 msgstr ""
 
-#: templates/lfs/checkout/one_page_checkout.html:234
+#: templates/lfs/checkout/one_page_checkout.html:237
 msgid "Accept terms and conditions"
-msgstr ""
+msgstr "Accetto i termini e le condizioni d'uso."
 
-#: templates/lfs/checkout/one_page_checkout.html:243
+#: templates/lfs/checkout/one_page_checkout.html:246
 msgid "Go to cart"
 msgstr ""
 
-#: templates/lfs/checkout/one_page_checkout.html:246
+#: templates/lfs/checkout/one_page_checkout.html:249
 msgid "Submit order"
 msgstr ""
 
@@ -86,4 +170,73 @@ msgstr ""
 
 #: templates/lfs/customer/addresses.html:35
 msgid "Save address"
+msgstr ""
+
+#: templates/lfs/mail/order_details.html:6
+msgid "General"
+msgstr ""
+
+#: templates/lfs/mail/order_details.html:11
+msgid "Customer name"
+msgstr ""
+
+#: templates/lfs/mail/order_details.html:17
+msgid "Number"
+msgstr ""
+
+#: templates/lfs/mail/order_details.html:25
+#, fuzzy
+msgid "E-mail"
+msgstr "E-mail"
+
+#: templates/lfs/mail/order_details.html:31
+msgid "Date"
+msgstr ""
+
+#: templates/lfs/mail/order_details.html:34
+msgid "DATETIME_FORMAT"
+msgstr ""
+
+#: templates/lfs/mail/order_details.html:39
+msgid "Phone"
+msgstr ""
+
+#: templates/lfs/mail/order_details.html:45
+msgid "State"
+msgstr ""
+
+#: templates/lfs/mail/order_details.html:66
+msgid "Address"
+msgstr ""
+
+#: templates/lfs/mail/order_details.html:69
+msgid "Shipping method"
+msgstr ""
+
+#: templates/lfs/mail/order_details.html:72
+msgid "Payment method"
+msgstr ""
+
+#: templates/lfs/mail/order_details.html:131
+msgid "Pay now"
+msgstr ""
+
+#: templates/lfs/mail/order_details.html:143
+msgid "SKU"
+msgstr ""
+
+#: templates/lfs/mail/order_details.html:146
+msgid "Name"
+msgstr ""
+
+#: templates/lfs/mail/order_details.html:149
+msgid "Amount"
+msgstr ""
+
+#: templates/lfs/mail/order_details.html:260
+msgid "All prices are in euros. VAT is included"
+msgstr "Tutti i prezzi sono in EURO, IVA inclusa"
+
+#: templates/lfs/mail/order_details.html:268
+msgid "Your message to us"
 msgstr ""
