@@ -29,14 +29,13 @@
             <th colspan="2">
                 {% trans 'Product' %}
             </th>
-            <th class="left"
-                colspan="2">
+            <th class="text-center">
                 {% trans 'Quantity' %}
             </th>
-            <th class="number">
+            <th class="text-center">
                 {% trans 'Price' %}
             </th>
-            <th class="number">
+            <th class="text-center">
                 {% trans 'Total' %}
             </th>
         </tr>
@@ -76,10 +75,8 @@
                     {% endif %}
 
                 </td>
-                <td class="number">
+                <td class="text-center">
                     {{ cart_item.quantity }}
-                </td>
-                <td class="padding-left hidden-sm">
                     {{ cart_item.product.get_unit }}
                     {% if cart_item.product.get_active_packing_unit %}
                         <span class="packing-unit">
@@ -87,14 +84,14 @@
                         </span>
                     {% endif %}
                 </td>
-                <td class="number">
+                <td class="text-center">
                     {% if cart_item.product.for_sale %}
                         {{ cart_item.product.for_sale_price|currency:request }}
                     {% else %}
                         {{ cart_item.product.price|currency:request }}
                     {% endif %}
                 </td>
-                <td class="number">
+                <td class="text-center">
                     {{ cart_item.product_price_gross|currency:request}}
                 </td>
             </tr>
@@ -106,14 +103,13 @@
                 <td class="left">
                     {{ discount.name }}
                 </td>
-                <td class="number">
+                <td class="text-center">
                     1
                 </td>
-                <td></td>
-                <td class="number">
+                <td class="text-center">
                     - {{ discount.price_net|currency:request}}
                 </td>
-                <td class="number">
+                <td class="text-center">
                     - {{ discount.price_gross|currency:request}}
                 </td>
             </tr>
@@ -125,32 +121,30 @@
                 <td class="left">
                     {% trans "Voucher" %}
                 </td>
-                <td class="number">
+                <td class="text-center">
                     1
                 </td>
-                <td></td>
-                <td class="number">
+                <td class="text-center">
                     - {{ voucher_value|currency:request}}
                 </td>
-                <td class="number">
+                <td class="text-center">
                     - {{ voucher_value|currency:request}}
                 </td>
             </tr>
         {% endif %}
 
         <tr>
-            <td></td>
-            <td>
+            <td class="col-md-1"></td>
+            <td class="col-md-8">
                 {% trans 'Shipping' %} ({{ selected_shipping_method.name }})
             </td>
-            <td class="number">
+            <td class="text-center col-md-1">
                 1
             </td>
-            <td></td>
-            <td class="number">
+            <td class="text-center col-md-1">
                 {{ shipping_price|currency:request}}
             </td>
-            <td class="number">
+            <td class="text-center col-md-1">
                 {{ shipping_price|currency:request}}
             </td>
         </tr>
@@ -160,14 +154,13 @@
             <td>
                 {% trans 'Payment' %} ({{ selected_payment_method.name }})
             </td>
-            <td class="number">
+            <td class="text-center">
                 1
             </td>
-            <td></td>
-            <td class="number">
+            <td class="text-center">
                 {{ payment_price|currency:request}}
             </td>
-            <td class="number">
+            <td class="text-center">
                 {{ payment_price|currency:request}}
             </td>
         </tr>
@@ -180,8 +173,7 @@
             </td>
             <td></td>
             <td></td>
-            <td></td>
-            <td>
+            <td class="text-center">
                 {{ cart_price|currency:request}}
             </td>
         </tr>
