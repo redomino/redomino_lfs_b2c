@@ -94,7 +94,7 @@
                     </td>
                     <td class="number hidden-xs"
                         nowrap="nowrap">
-                        {% if cart_item.product.for_sale %}
+                        {% if cart_item.product.for_sale_price %}
                             {{ cart_item.product.for_sale_price|currency:request }}
                         {% else %}
                             {{ cart_item.product.price|currency:request }}
